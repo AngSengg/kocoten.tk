@@ -1,0 +1,55 @@
+*{
+  
+}
+body {
+  margin: 0; /* Loại bỏ margin mặc định của trình duyệt */
+  padding: 0; /* Loại bỏ padding mặc định của trình duyệt */
+  background-image: url(https://c.wallhere.com/photos/94/2a/monochrome_black_clouds_mountains_sky_white-79903.jpg!d); /* Thay đổi đường dẫn đến hình ảnh của bạn */
+  background-size: cover; /* Hiển thị hình ảnh sao cho nó vừa với kích thước của background */
+  background-position: center; /* Căn giữa hình ảnh */
+  background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+  height: 100vh; /* 100% chiều cao của màn hình */
+  width: 100%; /* 100% chiều rộng của màn hình */
+}
+@keyframes glow {
+    from {
+        color: white;
+    }
+    to {
+        color: black;
+    }
+}
+h1{
+  color: white; /* Màu chữ là trắng */
+  opacity: 0.5; /* Đặt độ mờ, giá trị từ 0 (hoàn toàn trong suốt) đến 1 (không mờ) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Tạo hiệu ứng đèn với độ mờ */
+  animation: glow 2s infinite alternate; /* Thêm hiệu ứng nhấp nháy */
+}
+nav{
+  /*kiểu dạng cho nav*/
+  background-color: #202020;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+}
+nav a{
+  float: left; /* Liên kết nằm bên trái */
+  display: block; /* Hiển thị thành khối để tận dụng toàn bộ chiều ngang */
+  color: white; /* Màu chữ */
+  text-align: center; /* Căn giữa nội dung trong liên kết */
+  padding: 14px 16px; /* Khoảng cách nội dung từ biên */
+  text-decoration: none; /* Loại bỏ đường gạch chân mặc định của liên kết */
+}
+nav a{
+  text-decoration: none; /* Loại bỏ đường gạch chân mặc định của liên kết */
+  color: white; /* Màu chữ */
+  font-weight: bold; /* Chữ in đậm */
+  font-size: 18px; /* Kích thước chữ */
+  transition: box-shadow 0.3s; /* Hiệu ứng transition cho box-shadow */
+}
+nav a:hover{
+   box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Tạo hiệu ứng glow với màu và độ trong suốt tùy chọn */
+}
